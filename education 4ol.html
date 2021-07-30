@@ -1,0 +1,257 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./eduction4ol.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-teal">
+         <div class="container">
+          <a href="#" class="navbar-brand "><i class="fas fa-plane-departure"></i></a>
+         <button class="navbar-toggler" data-toggle="collapse" data-target="#travel-navbar">
+          <span class="navbar-toggler-icon ">
+         </span>
+         </button>
+             <div class="collapse navbar-collapse" id="travel-navbar">
+         <ul>
+          <li>
+            <a href="#" class="logo"
+              ><i class="fas fa-user-graduate"></i></a
+            >
+          </li>
+          <li><a class="active" href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#course">course</a></li>
+          <li><a href="#contact">contact</a></li>
+          <li><a href="./education4ol.html">Profile </a></li>
+         
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-secondary dropdown-toggle"
+              data-toggle="dropdown"
+            >
+              Account
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#" id="button"> Log In </a>
+              <a class="dropdown-item" href="#" id="logout">Log Out</a>
+              <a class="dropdown-item" href="#">Sign Up</a>
+              <a class="dropdown-item" href="./cart.html" id="cartitem">cart </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Setting</a>
+            </div>
+          </div>
+           </ul>
+          </div>
+         <div class="center">
+          <div class="container">
+            <div class="form">
+              <form>
+                <div class="text">Login Form</div>
+                <br />
+                <div class="data">
+                  <label>Email Id</label>
+                  <input type="text" required />
+                </div>
+                <div class="data">
+                  <label>Password</label>
+                  <input type="password" required />
+                </div>
+                <div class="data">
+                  <a href="#">Forget Password</a>
+                </div>
+                <div class="data">
+                  <button class="btn1" id="btn" type="submit">Login</button>
+                <!-- </div class="data">
+                 <button><div class="popup-close-btn" id="btn">&times;
+                </div></button> -->
+              </form>
+            </div>
+          </div>
+          </div>
+          <div class="log">
+            <p>you are logout</p> 
+            <button class="log-out" id="close">&times</button>
+            <!-- <div id="close">&times</div> -->
+          </div>
+          
+      </nav>
+      <div id="login" class="fas fa-user-circle"></div>
+
+    </header>
+    <script>
+      document.getElementById("button").addEventListener("click", function () {
+        document.querySelector(".form").style.display = "flex";
+      });
+       document.getElementById("btn").addEventListener("click", function () {
+        document.querySelector(".form").style.display = "none";
+      });
+      document.getElementById("logout").addEventListener("click", function () {
+        document.querySelector(".log").style.display = "flex";
+      });
+       document.getElementById("close").addEventListener("click", function () {
+        document.querySelector(".log").style.display = "none";
+      });
+       
+   
+    </script>
+    <section class="home" id="home">
+      <h1>Home</h1>
+      <h4>Welcome to Education Up!!!!!</h4>
+      <p>To level up your knowledge with us.</p>
+      <a href="#"
+        ><button type="button" class="btn btn-info">Start Course</button></a
+      >
+    </section>
+    <br />
+    <section class="about" id="about">
+      <h1>About Us:</h1>
+      <div class="image">
+        <img src="Studying-rafiki11.png" width="500px" />
+      </div>
+      <div class="content">
+        <p>
+          We take initiative to learn your kids. Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Molestiae quae rem culpa delectus
+          officiis reiciendis fugit ex numquam aliquam voluptate dolor libero
+          sint illum, reprehenderit velit unde distinctio non alias.
+        </p>
+      </div>
+    </section>
+    <section class="course" id="course">
+      <h1>Course:</h1>
+      <div class="my">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="card" style="width: 18rem" id="item1">
+              <img
+                src="./Studying-rafiki.png"
+                width="200px"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <h4 class="card-price">200</h4>
+                
+                <a href="#" class="btn btn-info">Details</a>
+                <div class="btn btn-primary">Buy</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="card" style="width: 18rem" id="item2">
+              <img
+                src="./Studying-rafiki.png"
+                width="200px"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <h4 class="card-price">400</h4>
+                <a href="#" class="btn btn-info">Details</a>
+                <div class="btn btn-primary">Buy</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="card" style="width: 18rem" id="item3">
+              <img
+                src="./Studying-rafiki.png"
+                width="200px"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <h4 class="card-price">800</h4>
+                <a href="#" class="btn btn-info">Details</a>
+                <a  class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="card" style="width: 18rem" id="item4">
+              <img
+                src="./Studying-rafiki.png"
+                width="200px"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <h4 class="card-price">1000</h4>
+                <a href="#" class="btn btn-info">Details</a>
+                <a  class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        <script src="./main.js"> </script>
+
+
+
+
+    </section>
+    <section class="contact" id="contact">
+      <h1>Contact:</h1>
+      <h4>Name:</h4>
+      xyz
+      <h4>Phone No:</h4>
+      ...........
+      <h4>Location:</h4>
+      xyz
+    </section>
+    <footer class="p-3 mt-3 bg-teal text-center text-white">
+       <div class="container">
+         <div class="row">
+           <div class="col">
+             <h3>Copyright &copy; 2021 , Education </h3>
+             <h6>All Right Reserved</h6>
+             <h6>Developed and Maintained by Owner</h6>
+           </div>
+         </div>
+       </div>
+     </footer>
+  </body>
+</html>
